@@ -28,11 +28,11 @@ class  ShopAdapter (var productList:List<Product>):RecyclerView.Adapter<ShopView
         var  binding=holder.binding
         binding.tvId.text=currentProduct.id.toString()
 //        binding.tvTitle.text=currentProduct.title.toString()
-        binding.tvDescription.text=currentProduct.description.toString()
+        binding.tvDescription.text=currentProduct.description
         binding.tvPrice.text=currentProduct.price.toString()
         binding.tvRating.text=currentProduct.rating.toString()
         binding.tvStock.text=currentProduct.stock.toString()
-        binding.tvCategory.text=currentProduct.category.toString()
+        binding.tvCategory.text=currentProduct.category
 
         Picasso
             .get()
